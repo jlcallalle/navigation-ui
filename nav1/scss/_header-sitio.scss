@@ -1,0 +1,124 @@
+.navbar-wrapper {
+    padding: 0 20px;
+    position: relative;
+    background-color: #f3f1f1;
+    height: 56px;
+    @include min-screen($tablet-l) {
+        height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.brand-logo {
+    margin: 5px 0;
+    img {
+        width: 42px;
+        @include min-screen($tablet-l) {
+            width:60px;
+        }
+    }
+}
+
+
+
+.boton-hamburgesa {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    > span {
+        display: block;
+        @include min-screen($tablet-l) {
+            display: none;
+        }
+    }
+
+    .linea {
+        width: 20px;
+        height: 14px;
+        border: 2px solid #8d8d8d;
+        border-left: none;
+        border-right: none;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 50%;
+            margin-top: -1px;
+            background-color: #8d8d8d;
+        }
+    }
+}
+
+.lista {
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    font-size: 0;
+    background-color: #0050a5;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 501;
+    transition: max-height 0.5s ease-in;
+
+    .activado + & {
+        max-height: 600px;
+        transition: max-height 0.5s ease-in;
+    }
+
+    @include min-screen($tablet-l) {
+        position: static;
+        max-height: initial;
+        background-color: transparent;
+    }
+
+
+    > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        border-bottom: 1px solid #3373b7;
+
+        @include min-screen($tablet-l) {
+            border-bottom: none;
+            border-right: 1px solid #c2c2c2;
+            width: auto;
+        }
+
+        &:last-child {
+            border: none;
+
+            > a{
+                padding-right: 0;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        color:white;
+        font-size: 16px;
+        padding: 18px 30px;
+
+        @include min-screen($tablet-l) {
+            color:gray;
+            padding: 0 12px;
+        }
+
+        @include min-screen($escritorio) {
+            padding: 0 24px;
+        }
+    }
+}
+
+main {
+    @include clearfix;
+    margin:10px;
+    background-color: #f3f1f1;
+}

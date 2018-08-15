@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Menu Nav 1</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Descripción de la página">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <nav  class="navbar" role="navigation">
+         <div class="navbar-wrapper contenedor">
+              <a href="/" class="brand-logo">
+                <img src="images/dropbox.png" alt="Metrololitan Touring" width="80" class="logo-header">
+              </a>
+              <div class="nav-main">
+                <a class="boton-hamburgesa">
+                  <span class="linea"></span>
+                </a>
+                <ul class="lista">
+                  <li><a href="#">nav 1</a></li>
+                  <li><a href="#">nav 2</a></li>
+                  <li><a href="#">nav 3</a></li>
+                  <li><a href="#">nav 4</a></li>
+                  <li><a href="#">nav 5</a></li>
+                </ul>
+              </div>
+         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam labore eius ipsa doloremque dolor ipsam blanditiis voluptatum temporibus unde numquam in, ratione id veritatis! Iusto cupiditate eveniet voluptatum molestias illum!</p>
+      </div>
+    </main>
+  
+    <script src="js/min/recursos.min.js"></script>
+    <script>
+        //Menu Desplegable      
+        $(document).ready(function(){
+
+           $('.boton-hamburgesa').click(function(event) {
+                  event.stopPropagation();
+                  event.preventDefault();
+
+                  if (!$(this).hasClass('activado')) {
+                      $(this).addClass('activado');
+                      console.log('activado');
+                  } else {
+                      $(this).removeClass('activado');
+                      console.log('no activado');
+                  };
+           });
+
+        });
+    </script>
+  </body>
+</html>

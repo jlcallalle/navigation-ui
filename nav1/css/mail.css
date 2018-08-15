@@ -1,0 +1,63 @@
+
+.tabla th {
+  display: table-cell;
+}
+
+.tabla td {
+  display: block;
+  padding: 10px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.tabla td {
+  display: table-cell;
+  text-align: center;
+}
+
+.tabla td:first-child {
+  background-color: #8cc63e;
+  color: white;
+}
+
+
+.tabla td:first-child {
+  background-color: transparent;
+  color: inherit;
+}
+
+
+.tabla td:first-child > span {
+  font-size: 15px;
+}
+
+
+.tabla td:first-child > span {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+
+.tabla td:before {
+  content: attr(data-encabezado);
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+
+
+.tabla td:before {
+  display: none;
+}
+
+
+.tabla .valor {
+  display: inline-block;
+  width: 50%;
+}
+
+
+.tabla .valor {
+  width: auto;
+}
+
