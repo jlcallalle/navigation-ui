@@ -3,9 +3,9 @@
     position: relative;
     background-color: #f3f1f1;
     height: 56px;
+    display: flex;
     @include min-screen($tablet-l) {
         height:auto;
-        display: flex;
         align-items: center;
         justify-content: space-between;
     }
