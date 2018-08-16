@@ -1,0 +1,45 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="flexnav">FlexNav</h1>
+<h2 id="project-has-been-put-on-hold-">Project has been put on hold.</h2>
+<h3 id="check-out-the-demo"><a href="https://flexnav.netlify.com/">Check out the demo</a></h3>
+<h2 id="what-is-it-">What is it?</h2>
+<p>FlexNav is a fixed responsive navbar made with flexbox. Its purpose is to be easy to add to your site, simply by copying the css file and the html navigation. It&#39;s also made to be lightweight, meaning no jQuery or other unnecessary stuff. I created this navbar for my own use so that I didn&#39;t have to go through the pain of making a new responsive navbar for every site.</p>
+<h2 id="how-do-i-use-it-">How do I use it?</h2>
+<p>It&#39;s really simple to get started, all you need to do is to copy the <strong>flexnav.css</strong> and <strong>script.js</strong> file and put it into your own site. After that you copy this HTML:</p>
+<pre><code>&lt;div id=&quot;nav-background&quot;&gt;
+  &lt;div id=&quot;nav-container&quot;&gt;
+    &lt;header id=&quot;nav-header&quot;&gt;
+      &lt;h1&gt;&lt;a href=&quot;#&quot; id=&quot;nav-logo&quot;&gt;FlexNav&lt;/a&gt;&lt;/h1&gt;
+      &lt;div id=&quot;nav-menu-button&quot;&gt;MENU&lt;/div&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+      &lt;ul class=&quot;nav-ul hide-ul&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;nav-link active-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>and put it at the top of your body section.</p>
+<h2 id="how-does-it-work-">How does it work?</h2>
+<p>The navigation is based on a few different layers.</p>
+<h4 id="nav-background">nav-background</h4>
+<p>This is the white background of the nav that spans across the whole width of the page. It encapsulates the whole navigation.</p>
+<h4 id="nav-container">nav-container</h4>
+<p>I use this part to switch between <code>column</code> and <code>row</code> when displaying the navbar on different screen sizes. Column for mobiles, row for desktops. It&#39;s also where the width of the navbar is set. Right now the max-width of the navbar is 1000px, but this can be changed of course to fit your needs.</p>
+<h4 id="nav-header">nav-header</h4>
+<p>This is where the logo (right now it&#39;s just text) is located.</p>
+<h4 id="nav-ul-and-hide-ul">nav-ul and hide-ul</h4>
+<p><code>nav-ul</code> adds styling to the navigation items while <code>hide-ul</code> toggles the mobile menu on and off if you click the menu button.</p>
+<h2 id="what-will-change-">What will change?</h2>
+<p>This navigation is a work in progress and there&#39;s still a lot of things to iron out. I still haven&#39;t done much testing of how it actually works when implementing it on a variety of sites, so use with caution. My plan is to keep making it more stable and efficient until it will be an easy Plug &amp; Play menu usable on all sites. I&#39;m also planning on making it easy to change the styling of the menu.</p>
+
+      </body>
+    </html>
